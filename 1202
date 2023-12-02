@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+   int n, i, a=0, b=1, c=0;
+   scanf("%d", &n);
+   c=c+n;
+   for(i=0; i<n*n; i++)
+   {
+       if(b==n)
+       {
+           printf("%d\n", a+c);
+           a--;
+           b=1;
+           c=c+2*n;
+       }
+       else
+       {
+           printf("%d ", a+c);
+           a--;
+           b++;
+       }
+   }
+}
